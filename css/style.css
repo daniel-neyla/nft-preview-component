@@ -15,3 +15,93 @@
   /* Font family */
   --ff-outfit: "Outfit", sans-serif;
 }
+
+body {
+  font-family: var(--ff-outfit);
+  font-weight: var(--fw-regular);
+  background-color: var(--clr-neutral-900);
+  /* For this project specifically */
+  display: grid;
+  place-content: center;
+  font-size: 1rem;
+  margin: 1.2rem;
+}
+
+p {
+  color: var(--clr-primary-soft-blue);
+}
+
+.nft {
+  --content-gap: 1rem;
+  background-color: var(--clr-neutral-700);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  max-width: 350px;
+  /* display: flex;
+  flex-direction: column;
+  gap: 2rem; */
+}
+
+.nft-image {
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.nft-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-gap);
+  border-bottom: 0.1px solid #ffffff52;
+  padding-bottom: 1rem;
+}
+
+.nft-title {
+  color: #fff;
+  font-weight: var(--fw-bold);
+}
+
+.nft-description {
+  font-weight: var(--fw-thin);
+}
+
+.flex-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nft-price {
+  color: var(--clr-primary-cyan);
+  font-weight: var(--fw-bold);
+}
+
+.nft-expiry-date {
+  color: var(--clr-primary-soft-blue);
+}
+
+.nft-price,
+.nft-expiry-date {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nft-creator {
+  margin: 1rem 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.creator-profile {
+  width: 2.5rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.creator-name {
+}
+
+.creator-name span {
+  color: #fff;
+}
