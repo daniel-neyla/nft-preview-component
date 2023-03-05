@@ -28,19 +28,31 @@
   <body>
     <main>
       <article class="nft">
-        <img
-          class="nft-image"
-          src="./images/image-equilibrium.jpg"
-          alt="Picture of nft showing a cube balancing on its corner"
-        />
+        <div class="img-container">
+          <div class="img-overlay">
+            <img src="./images/icon-view.svg" alt="icon" />
+          </div>
+          <img
+            class="nft-image"
+            src="./images/image-equilibrium.jpg"
+            alt="Picture of nft showing a cube balancing on its corner"
+          />
+        </div>
+
         <div class="nft-content">
           <h1 class="nft-title">Equilibrium #3249</h1>
           <p class="nft-description">
             Our Equilibrium collection promotes balance and calm.
           </p>
           <div class="flex-group">
-            <div class="nft-price" data-icon="ethereum">0.041ETH</div>
-            <div class="nft-expiry-date" data-icon="clock">3 days left</div>
+            <div class="nft-price">
+              <img src="./images/icon-ethereum.svg" alt="icon" />
+              <span>0.041ETH</span>
+            </div>
+            <div class="nft-expiry-date">
+              <img src="./images/icon-clock.svg" alt="icon" />
+              <span>3 days left</span>
+            </div>
           </div>
         </div>
         <div class="nft-creator">
@@ -49,7 +61,7 @@
             src="./images/image-avatar.png"
             alt="Image of the creator of this nft"
           />
-          <p class="creator-name"><span>Creation of</span> Jules Wyvern</p>
+          <p class="creator-name">Creation of <span>Jules Wyvern</span></p>
         </div>
       </article>
     </main>
